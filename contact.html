@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="icon" href="assets/favicon.ico" />
+    <meta name="author" content="Laeli Nurchasanah" />
+    <meta name="description" content="Tugas 8" />
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- OS For Animation Scrolling -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Link fonts using CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- Bootstrap 5 cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Tugas11_Laeli Nurchasanah</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/images/logo.png" class="w-50" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mg-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#popular">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#services">Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Property
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="index.html#popular">Jakarta</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#popular">Bogor</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#popular">Depok</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#popular"
+                    >Tangerang</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#popular">Bekasi</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#qa">Questions</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn text-white bg-dark px-3"
+                href="/contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact section -->
+    <section>
+      <div class="container mb-5">
+        <div class="col-md-12 col-lg-0" style="margin-top: 150px">
+          <h1 class="text-singler">Contact Us</h1>
+        </div>
+      </div>
+      <div class="contact mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <form action="">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="your-name" class="form-label">Your Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="your-name"
+                      required
+                      min="2"
+                      max="50"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="your-email" class="form-label"
+                      >Your Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="your-email"
+                      required
+                      min="5"
+                      max="50"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="your-subject" class="form-label">Subject</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      name="your-subject"
+                      min="3"
+                      max="100"
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <label for="Your-message" class="form-label"
+                      >Your Message</label
+                    >
+                    <textarea
+                      name="your-message"
+                      id="your-message"
+                      class="form-control"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="mt-3 mb-5">
+                    <button
+                      class="btn text-white bg-dark px-3 btn-lg rounded-0"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- Maps -->
+            <div id="map" class="contact-map col-lg-5 mb-4">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.329209323782!2d106.81359012499034!3d-6.220247393767772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1559fe76c0d%3A0xbd0fbd3f7765eb4a!2sAryaduta%20Suites%20Semanggi!5e0!3m2!1sid!2sid!4v1721823707073!5m2!1sid!2sid"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark bg-footer" style="margin-top: 80px" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h5 class="text-light">About Us</h5>
+            <p class="text-light">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo,
+              rerum.
+            </p>
+            <p class="text-light">
+              <i class="fa fa-location"></i>Mars Street No. 46
+            </p>
+            <p class="text-light"><i class="fa fa-phone"></i>(68) 78655533</p>
+            <p class="text-light">
+              <i class="fa fa-envelope"></i>info@elbright.com
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="text-light">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#popular">Popular</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="index.html#property">Property</a></li>
+              <li><a href="index.html#reviews">Reviews</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="text-light">Stay Connected</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.facebook.com"
+                  ><i class="fab fa-facebook"></i> Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/laeli-nurchasanah-87bb73231/"
+                  ><i class="fab fa-linkedin"></i> LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/bright_lael/"
+                  ><i class="fab fa-instagram"></i> Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://x.com/home"
+                  ><i class="fab fa-twitter"></i> Twitter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="text-light text-center">
+              Copyright &copy; 2024
+              <a href="#">El Bright Estate Development</a>. All Right Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

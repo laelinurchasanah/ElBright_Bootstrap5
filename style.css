@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Monsterrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: 0.3;
+  background: #fff;
+}
+.w-100-heigh {
+  height: 90vh;
+  width: 100%;
+}
+.carousel-item {
+  min-height: 300px;
+}
+.carousel-caption {
+  position: relative;
+  text-align: center;
+  margin-bottom: 200px;
+  z-index: 2;
+}
+.carousel-caption h5 {
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  line-height: 60px;
+  text-align: left;
+}
+.carousel-caption p {
+  width: 60%;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: left;
+}
+.carousel-item .carousel-caption input {
+  padding: 0.73rem 1rem;
+}
+.carousel-inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.card-bottom {
+  right: 0;
+  margin-top: -178px;
+}
+.card-text {
+  color: #aeaeae;
+}
+.card-color {
+  background: #000;
+}
+.card {
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.06);
+}
+.arrow-icon {
+  font-size: 20px;
+}
+.card-body .btn-readmore {
+  background-color: #d4e9ff;
+  color: #0a38b6;
+  transition: all 0.5s ease;
+}
+.card-body .btn-readmore:hover {
+  background-color: #0a38b6;
+  color: #fff;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+.bg-footer {
+  background-color: #000;
+  padding: 50px 0 30px;
+}
+.bg-footer a {
+  text-decoration: none;
+  color: #aeaeae;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .carousel-caption h5 {
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .carousel-caption p {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+  .carousel .card-bottom {
+    display: none;
+  }
+}

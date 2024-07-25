@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="icon" href="assets/favicon.ico" />
+    <meta name="author" content="Laeli Nurchasanah" />
+    <meta name="description" content="Tugas 8" />
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- OS For Animation Scrolling -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Link fonts using CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- Bootstrap 5 cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Tugas11_Laeli Nurchasanah</title>
+  </head>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/images/logo.png" class="w-50" alt="logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mg-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#popular">Popular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Property
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#popular">Jakarta</a></li>
+              <li><a class="dropdown-item" href="#popular">Bogor</a></li>
+              <li><a class="dropdown-item" href="#popular">Depok</a></li>
+              <li><a class="dropdown-item" href="#popular">Tangerang</a></li>
+              <li><a class="dropdown-item" href="#popular">Bekasi</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#qa">Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn text-white bg-dark px-3" href="/contact.html"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <body>
+    <!-- Caroules -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" id="home">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/images/latest1.jpg"
+            class="d-block w-100-heigh"
+            alt="img1"
+          />
+          <div class="carousel-caption carousel1">
+            <p>1 / 3</p>
+            <h5>Discover Property <br />More Easily</h5>
+            <div class="mt-5 d-flex">
+              <input
+                type="text"
+                class="form-control search w-50"
+                id="floatingInput"
+                placeholder="search..."
+              />
+              <button
+                class="btn btn-light btn-sm justify-content-end mx-2 px-3"
+              >
+                <i class="fas fa-search"></i>Search
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/images/adcp.jpg" class="d-block w-100-heigh" alt="img1" />
+          <div class="carousel-caption carousel1">
+            <p>2 / 3</p>
+            <h5>Premium Homes <br />For Our Future <br />Generation</h5>
+            <p>
+              <a href="#" class="btn btn-light btn-lg mt-3">Discovery More</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/images/citracity.jpg"
+            class="d-block w-100-heigh"
+            alt="img1"
+          />
+          <div class="carousel-caption carousel1">
+            <p>3 / 3</p>
+            <h5>We Build <br />For Our Bright <br />Future!</h5>
+            <p>
+              <a href="#" class="btn btn-light btn-lg mt-3">Discovery More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Card -->
+
+      <div
+        class="col-md-4 z-1 position-absolute card-bottom card mb-3 card-color rounded-0 bg-dark"
+      >
+        <div class="row align-items-center">
+          <div class="col-md-9">
+            <div class="card-body">
+              <h5 class="card-title text-light">El Bright Development</h5>
+              <p class="card-text text-light">
+                Investing in real estate has never been easier. EL Bright
+                development takes the guesswork out of finding your dream home
+                or investment property. Our meticulously planned communities are
+                designed to maximize value and elevate your lifestyle.
+              </p>
+              <p class="card-text">
+                <small class="text-white">Laeli Nurchasanah (Founder)</small>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img
+              src="/images/family.jpeg"
+              class="img-fluid rounded-start"
+              alt="img4"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popular -->
+    <section class="container" style="margin-top: 100px" id="popular">
+      <p class="pt-5">Popular</p>
+      <div class="d-flex">
+        <h2>Popular Cluster</h2>
+        <h6 class="ms-auto">
+          Explore All <span class="arrow-icon">&rarr;</span>
+        </h6>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg g-4 mt-2">
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="/images/adcp.jpg"
+              alt="img5"
+              class="card-img-top rounded-0"
+            />
+            <div class="card-body">
+              <p class="card-text text-muted">Sentul, West Java</p>
+              <div class="d-flex justify-content-center mt-3">
+                <p class="mx-4 text-muted card-text">
+                  <i class="fa fa-car"></i> 1 cars
+                </p>
+                <p class="mx-4 text-muted card-text">
+                  <i class="fa fa-play"></i> 3 Bed
+                </p>
+                <p class="mx-4 text-muted card-text">
+                  <i class="fa fa-compass"></i> 90m<sup>2</sup>
+                </p>
+              </div>
+              <div class="d-flex my-2">
+                <button class="btn btn-lg text-white bg-dark px-4 rounded-0">
+                  Book Now
+                </button>
+                <h5 class="my-auto ms-auto">Rp 1.05M</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="/images/summarecon-1.png"
+              alt="img5"
+              class="card-img-top rounded-0"
+            />
+            <div class="card-body">
+              <p class="card-text text-muted">South Jakarta</p>
+              <div class="d-flex justify-content-center mt-3">
+                <p class="mx-4 text-muted card-text">
+                  <i class="fa fa-car"></i> 2 cars
+                </p>
+                <p class="mx-4 text-muted card-text">
+                  <i class="fa fa-play"></i> 4 Bed
+                </p>
+                <p class="mx-4 text-muted card-text">
+                  <i class="fa fa-compass"></i> 300m<sup>2</sup>
+                </p>
+              </div>
+              <div class="d-flex my-2">
+                <button class="btn btn-lg text-white bg-dark px-4 rounded-0">
+                  Book Now
+                </button>
+                <h5 class="my-auto ms-auto">Rp 10.3M</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="/images/summarecon.jpg"
+              alt="img5"
+              class="card-img-top rounded-0"
+            />
+            <div class="card-body">
+              <p class="card-text text-muted">Sentul City, West Java</p>
+              <div class="d-flex justify-content-center mt-3">
+                <p class="mx-4 text-muted card-text">
+                  <i class="fa fa-car"></i> 2 cars
+                </p>
+                <p class="mx-4 text-muted card-text">
+                  <i class="fa fa-play"></i> 4 Bed
+                </p>
+                <p class="mx-4 text-muted card-text">
+                  <i class="fa fa-compass"></i> 125m<sup>2</sup>
+                </p>
+              </div>
+              <div class="d-flex my-2">
+                <button class="btn btn-lg text-white bg-dark px-4 rounded-0">
+                  Book Now
+                </button>
+                <h5 class="my-auto ms-auto">Rp 2.25M</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Quotes-->
+    <section class="bg-dark" style="margin-top: -15%">
+      <div class="container pt-5">
+        <div class="row" style="margin-top: 25%">
+          <div class="col-lg-4">
+            <h2 style="color: #b5b5b5">Laeli Nurchasanah</h2>
+            <p style="color: #b5b5b5">Founder El Bright</p>
+          </div>
+          <div class="col-lg-8 mb-5">
+            <h6 class="lh-lg" style="color: #b5b5b5">
+              &ldquo;At el bright development, we're redefining the real estate
+              experience. Our mission is to provide exceptional properties that
+              not only meet your needs, but exceed your expectations. With a
+              keen eye for detail and a commitment to excellence, we craft
+              living spaces that seamlessly blend form and function. From
+              first-time homebuyers to savvy investors, el bright development
+              caters to a diverse clientele. Our dedicated team will guide you
+              through every step of the process, ensuring a smooth and
+              stress-free transaction. Elevate your lifestyle and secure your
+              financial future with a premier real estate partner you can
+              trust.&rdquo;
+            </h6>
+          </div>
+        </div>
+        <hr class="text-light" />
+        <div class="container mt-5 pb-5">
+          <div class="row text-center">
+            <div class="col-md-3 col-sm-6">
+              <img src="images/logo1.png" alt="logo1" style="width: 55%" />
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <img src="images/logo2.png" alt="logo1" style="width: 55%" />
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <img src="images/logo3.png" alt="logo1" style="width: 55%" />
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <img src="images/logo4.png" alt="logo1" style="width: 55%" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section
+      class="about section-padding"
+      style="margin-top: 40px"
+      id="services"
+    >
+      <div class="text-center pb-5">
+        <h2>Our Services</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-12 col-12">
+            <div class="d-flex">
+              <div class="about-img mx-2">
+                <img
+                  src="images/family.jpeg"
+                  alt="about"
+                  class="img-fluid h-100 mt-4"
+                />
+              </div>
+              <div class="about-img">
+                <img
+                  src="images/family-2.jpeg"
+                  alt="about"
+                  class="img-fluid h-75"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-7 col-md-12 col-12 ps-lg-5 mt-md-5"
+            style="margin-top: 40px"
+          >
+            <div class="about-text">
+              <h2>Comfort Is Our <br />Top Priority For You</h2>
+              <p>
+                At el bright development, we believe that your real estate
+                experience should be as exceptional as the properties we offer.
+                Our mission is to redefine the way you think about investing in
+                your future, by providing premium living spaces that not only
+                meet your needs, but exceed your expectations. From first-time
+                homebuyers to seasoned investors, el bright development caters
+                to a diverse clientele, offering personalized guidance and
+                support every step of the way. Our dedicated team of industry
+                veterans will work tirelessly to ensure a smooth and stress-free
+                transaction, empowering you to make informed decisions and
+                secure your brightest real estate possibilities.
+              </p>
+              <a href="#" class="btn text-white bg-dark rounded-0 px-3"
+                >See More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Property Section -->
+    <section class="container" style="margin-top: 100px" id="property">
+      <p class="pt-5">Property</p>
+      <div class="d-flex">
+        <h2>Latest Housing Available</h2>
+        <button class="btn text-white bg-dark px-4 btn-md ms-auto rounded-0">
+          See All Article
+        </button>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg g-4 mt-2">
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="/images/latest1.jpg"
+              alt="img5"
+              class="card-img-top rounded-0"
+            />
+            <div class="card-body">
+              <p class="card-text text-muted">20 July 2024</p>
+              <p class="card-text text-muted">
+                This house offers the perfect blend of comfort, style, and
+                convenience. Imagine hosting weekend barbecues with friends or
+                cozy movie nights with the family - this home was made for
+                making lasting memories.
+              </p>
+
+              <button class="btn px-4 btn-lg rounded-0 btn-readmore">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="/images/latest2.jpg"
+              alt="img5"
+              class="card-img-top rounded-0"
+            />
+            <div class="card-body">
+              <p class="card-text text-muted">23 July 2024a</p>
+              <p class="card-text text-muted">
+                This home was thoughtfully crafted to provide the ultimate in
+                urban living. Enjoy the conveniences of city life while coming
+                home to a peaceful, private oasis. Whether you're entertaining
+                guests or simply unwinding after a long day.
+              </p>
+
+              <button class="btn px-4 btn-lg rounded-0 btn-readmore">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="/images/latest3.jpg"
+              alt="img5"
+              class="card-img-top rounded-0"
+            />
+            <div class="card-body">
+              <p class="card-text text-muted">23 July 2024</p>
+              <p class="card-text text-muted">
+                This exceptional home offers the perfect blend of style,
+                comfort, and convenience. Entertain guests effortlessly, work
+                from home in luxury, or simply enjoy quality time with loved
+                ones - this house was designed to elevate every aspect.
+              </p>
+
+              <button class="btn px-4 btn-lg rounded-0 btn-readmore">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="bg-dark" style="margin-top: 100px" id="reviews">
+      <div class="container pt-5">
+        <div class="d-flex" style="margin-top: 40px">
+          <h2 class="text-light">What Our Customers <br />Say About Us</h2>
+          <div class="ms-auto">
+            <button class="btn btn-md text-light">
+              <span class="arrow-icon mx-2">&rarr;</span>
+            </button>
+            <button class="btn btn-md text-light">
+              <span class="arrow-icon mx-2">&rarr;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container mx-auto row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pb-5 mt-3"
+      >
+        <div class="card border-0 rounded-0 bg-transparent col-md-8">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <img
+                src="images/review1.jpeg"
+                class="img-fluid rounded-start"
+                alt="review"
+              />
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title text-light">Im Nayeon</h5>
+                <p class="card-text">
+                  With El Bright, you'll enjoy a smooth, straightforward path to
+                  homeownership. Our proven process and expert support make
+                  buying a house a breeze.
+                </p>
+                <p class="card-text">
+                  <small class="text-light">CEO Twice</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card border-0 rounded-0 bg-transparent col-md-8">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <img
+                src="images/review2.jpeg"
+                class="img-fluid rounded-start"
+                alt="review"
+              />
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title text-light">Lee Dongmin</h5>
+                <p class="card-text">
+                  El Bright is perfect for first-time homebuyers, growing
+                  families, and anyone seeking a simpler, more enjoyable real
+                  estate experience.
+                </p>
+                <p class="card-text">
+                  <small class="text-light">Super Model</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card border-0 rounded-0 bg-transparent col-md-8">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <img
+                src="images/review3.jpeg"
+                class="img-fluid rounded-start"
+                alt="review"
+              />
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title text-light">Minatozaki Sana</h5>
+                <p class="card-text">
+                  El Bright is the perfect solution for busy professionals,
+                  growing families, and anyone who wants to take the hassle out
+                  of buying a house.
+                </p>
+                <p class="card-text">
+                  <small class="text-light">Lead Engineer</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QA Section -->
+    <section class="about section-padding" style="margin-top: 40px" id="qa">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-12 col-12 mt-md-3">
+            <div class="about-text">
+              <p>Questions</p>
+              <h2>Frequently Asked <br />Questions</h2>
+              <p>
+                El Bright is the ultimate lighting companion for those who value
+                both form and function. Designed to enhance your living or
+                workspace, this innovative fixture will become an indispensable
+                part of your daily life. Elevate your environment and experience
+                the transformative power of El Bright.
+              </p>
+              <a href="#" class="btn text-white bg-dark rounded-0 px-3"
+                >See More</a
+              >
+            </div>
+          </div>
+          <!-- Accordion -->
+          <div class="accordion col-lg-7 mt-3" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  What if I'm interested?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  To find out more information about houses, pricelist, etc.
+                  please contact our social media
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  How much down payment must be prepared?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  The amount of down payment depends on which house you take. To
+                  find out more information about houses, pricelist, etc. please
+                  contact our social media
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  What documents should I prepare?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  For cash purchases, you only need to prepare personal data
+                  such as KTP, KK, NPWP and marriage book. For mortgages,
+                  prepare employment data such as work certificates, pay slips
+                  and bank statements.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark bg-footer" style="margin-top: 80px" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h5 class="text-light">About Us</h5>
+            <p class="text-light">
+              At el bright development, we believe that your real estate
+              experience should be as exceptional as the properties we offer.
+            </p>
+            <p class="text-light">
+              <i class="fa fa-location"></i> Mars Street No. 46
+            </p>
+            <p class="text-light"><i class="fa fa-phone"></i> (68) 78655533</p>
+            <p class="text-light">
+              <i class="fa fa-envelope"></i> info@elbright.com
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="text-light">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="index.html#popular">Popular</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="index.html#popular">Property</a></li>
+              <li><a href="index.html#reviews">Reviews</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="text-light">Stay Connected</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.facebook.com"
+                  ><i class="fab fa-facebook"></i> Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/laeli-nurchasanah-87bb73231/"
+                  ><i class="fab fa-linkedin"></i> LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/bright_lael/"
+                  ><i class="fab fa-instagram"></i> Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://x.com/home"
+                  ><i class="fab fa-twitter"></i> Twitter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="text-light text-center">
+              Copyright &copy; 2024
+              <a href="#">El Bright Estate Development</a>. All Right Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
